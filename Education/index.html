@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9552352051.js" crossorigin="anonymous"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../Test/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Test</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        StuDent
+      </div>
+      <a href="index.html" class="fbtn-b" target="_blank">
+        <i class="fa-solid fa-download" aria-hidden="true"></i>
+      </a>
+      <div class="menu">
+        <ul class="nav-menu">
+          <li>
+            <button type="button" id="btnCalc"><a href="#search-container" class="nav-link"> Рассчитать стоимость
+              </a></button>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Время работы:
+              <br> 10:00-20:00
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">+1 123 456 78 90
+              <br> okv@ysu.com
+            </a>
+          </li>
+          <li>
+            <button class="DarkLite">dark</button>
+          </li>
+
+
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/student2.jfif" class="d-block w-100" alt="img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WEB DESIGN / WEB DEVELOPMENT </h5>
+            <p>DIGITAL TEAM.</p>
+            <button class="btncall">звонок бесплатный </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/studentM.jpg" class="d-block w-100" alt="imj">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WEB DESIGN / WEB DEVELOPMENT </h5>
+            <p>DIGITAL TEAM.</p>
+            <button class="btncall">звонок бесплатный </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/download.jfif" class="d-block w-100" alt="img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WEB DESIGN / WEB DEVELOPMENT </h5>
+            <p>DIGITAL TEAM.</p>
+            <button class="btncall">звонок бесплатный </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Search container -->
+  <section id="search-container">
+    <h1>PROGRAMMING COURSES</h1>
+    <div class="programcourses">
+      <div class="courseslanguages">
+        <div class="Language">
+          <p> select programming languages</p>
+          <input type="radio" id="FrontEnd" name="Language" value="FrontEnd">
+          <label for="Frontend">Frontend</label>
+          <br>
+          <input type="radio" id="JavaScript" name="Language" value="JavaScript">
+          <label for="JavaScript">JavaScript</label>
+          <br>
+          <input type="radio" id="React" name="Language" value="React">
+          <label for="React">React</label>
+          <br>
+          <input type="radio" id="Java" name="Language" value="Java">
+          <label for="Java">Java</label>
+          <br>
+          <input type="radio" id="Python-Django" name="Language" value="Python-Django">
+          <label for="Python-Django">Python-Django</label>
+          <br>
+          <input type="radio" id="SQL" name="Language" value="SQL">
+          <label for="SQL">SQL</label>
+          <br>
+        </div>
+        <div class="courses">
+          <p> select format courses</p>
+          <input type="radio" id="OnLine" name="courses" value="OnLine">
+          <label for="OnLine">OnLine</label>
+          <br>
+          <input type="radio" id="OffLine" name="courses" value="OffLine">
+          <label for="OffLine">OffLine</label>
+          <br>
+          <input type="number" id="ageNumber" min="7" max="70" step="1">
+          <label for="age">Age</label>
+          <input type="range" id="ageRange" min="7" max="70" step="1">
+          <br>
+        </div>
+        <button type="button" class="calc">calc</button>
+        <br>
+        <div id="result">
+        </div>
+      </div>
+      <div class="coursesimg">
+        <div class="small">
+          <h1>Java</h1>
+        </div>
+        <div class="small aos-init aos-animate" data-aos="fade-up" data-aos-delay:200,>
+          <h1>REACT</h1>
+        </div>
+        <div class="small aos-init aos-animate" data-aos="fade-down">
+          <h1>JS</h1>
+        </div>
+        <div class="small aos-init aos-animate" data-aos="fade-right">
+          <h1>Java</h1>
+        </div>
+        <div class="small aos-init aos-animate" data-aos="fade-left">
+          <h1>REACT</h1>
+        </div>
+        <div class="small aos-init aos-animate" data-aos="flip-down">
+          <h1>Front-END</h1>
+        </div>
+        <div class="small aos-init aos-animate" data-aos="flip-up">
+          <h1>JavaScript</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter">
+      <!--  -->
+      <button type="button" id="filterBTN" class="filterBTN">filterBTN</button>
+      <label for="Jname">Languages</label>
+      <select id="Jname">
+        <option value=""></option>
+        <option value="FrontEnd">Front-End</option>
+        <option value="Java">Java</option>
+        <option value="React">React</option>
+        <option value="javaScript">JavaScript</option>
+        <option value="Python-Django">Python-Jango</option>
+        <option value="SQL">SQL</option>
+      </select>
+    </div>
+  </section>
+  <section id="product-container">
+  </section>
+  <section id="Tests">
+    <h1>QUIZZES</h1>
+    <div class="containerTest">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../Test/index.html" class="nav-link">
+            <strong>JavaScript</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../TESTpython/index.html" class="nav-link">
+            <strong>python</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <strong>Java</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <strong>SQL</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="test">
+      <!-- <strong>select programming languages for testing </strong> -->
+      <div class="LanguageTest">
+        <input type="radio" id="FrontEndTest" name="LanguageTest" value="FrontEndTest">
+        <label for="FrontendTest">Frontend</label>
+        <br>
+        <input type="radio" id="JavaScriptTest" name="LanguageTest" value="JavaScriptTest">
+        <label for="JavaScriptTest">JavaScript</label>
+        <br>
+        <input type="radio" id="ReactTest" name="Languagetest" value="ReactTest">
+        <label for="ReactTest">React</label>
+        <br>
+        <input type="radio" id="JavaTest" name="LanguageTest" value="JavaTest">
+        <label for="JavaTest">Java</label>
+        <br>
+        <input type="radio" id="PythonTest" name="LanguageTest" value="PythonTest">
+        <label for="PythonTest">Python</label>
+        <br>
+        <input type="radio" id="SQLTest" name="LanguageTest" value="SQLTest">
+        <label for="SQLTest">SQL</label>
+        <br>
+
+        <button type="button" id="btnTest">Start test</button>
+      </div>
+      <div class="quizLanguages">
+        <div class="container">
+          <div class="timer-container">0s
+          </div>
+          <div class="question">
+            quetion
+          </div>
+          <div class="answors">
+          </div>
+          <div class="hushum">
+            Խնդրեմ, ընտրեք հարցը!!!
+          </div>
+          <button type="button" id="next">Հաջորդը</button>
+
+          <div class="progressShow"></div>
+          <div class="progressContainer">
+            <div class="progress">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="text-Contakt">
+      <h1>Связаться с нами</h1>
+      <p>Отправьте контакты для вызова задайте вопрос по телефону</p>
+    </div>
+    <div class="contactContainer">
+      <div class="contactPhone">
+        <div class="email-phone">
+          <div class="col-email">
+            <h3><i class="fa-sharp fa-solid fa-at"></i> EMAIL</h3>
+            <p>hello@domain.com</p>
+          </div>
+          <div class="col-phone">
+            <h3><i class="fa-solid fa-phone"></i> PHONES</h3>
+            <p>010-020-0340 | 090-080-0760</p>
+          </div>
+        </div>
+        <p class="ficon">
+          <i class="fa-solid fa-dice-d20  icon"></i>
+          <i class="fa-sharp fa-solid fa-envelope  icon"></i>
+          <i class="far fa-2x fa-comments  icon"></i>
+          <i class="fa-sharp fa-solid fa-star  icon"></i>
+          <i class="fa-solid fa-paper-plane  icon"></i>
+        </p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input type="text" class="form-control text" placeholder="Name" name="name">
+          <input type="email" class="form-control  email" placeholder="Email" name="email">
+          <textarea class="message" placeholder="Message" name="message"></textarea>
+          <input type="submit" class="submit" value="SEND MESSAGE">
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="by-me">
+      <h3><i class="fa-regular fa-copyright" aria-hidden="true"></i>2024 All Rights Reserved. By Knar Otaryan</h3>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../Test/js/main.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

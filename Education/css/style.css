@@ -1,0 +1,730 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.logo {
+  font-style: oblique;
+  font-family: "SnellBT-Regular";
+  color: linear-gradient(rgb(196, 210, 45), #198754);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #201c1c;
+  text-align: center;
+  margin: 10px;
+  z-index: 3;
+}
+
+.nav-menu {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.testmenu {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: rgba(195, 187, 187, 0.796);
+}
+
+.nav-item {
+  padding: 20px;
+  color: rgb(16, 15, 14);
+}
+
+.nav-links {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 22, 22);
+  text-align: center;
+}
+
+.DarkLite {
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+body.dark {
+  background-color: #373f05;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  background: rgb(111, 12, 55);
+}
+
+#btnCalc,
+.calc {
+  width: 200px;
+  margin-top: 30px;
+  height: 30px;
+  border-radius: 8px;
+  color: white;
+  background: linear-gradient(rgba(219, 220, 215, 0.768), rgba(110, 129, 6, 0.622));
+  border: 1px solid rgb(112, 112, 6);
+  text-align: center;
+  margin-left: 50px;
+}
+
+
+/*design*/
+.design {
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  color: rgb(110, 129, 6);
+}
+
+.design>h1:hover {
+  color: rgb(219, 220, 215);
+}
+
+.design>h3 {
+  font-size: 28px;
+}
+
+.design>h3:hover {
+  color: #d7de96;
+}
+
+#search-container {
+  width: 100%;
+  padding-top: 50px;
+
+}
+
+.courseslanguages {
+  width: 45%;
+}
+
+.coursesimg {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid rgb(95, 124, 8);
+  background-color: rgb(183, 236, 220);
+}
+
+.small {
+  width: 40%;
+  height: 70px;
+  margin: 20px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  rotate: 5deg;
+  ;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(rgba(220, 194, 124, 0.768),
+      rgba(59, 62, 3, 0.622));
+
+}
+
+#search-container>h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.search {
+  width: 80%;
+  text-align: center;
+}
+
+.programcourses {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Jmonse {
+  margin: 20px;
+  height: 30px;
+}
+
+#Jname {
+  margin: 20px;
+  height: 30px;
+}
+
+.filter {
+  padding: 20px;
+}
+
+#result {
+  margin: 40px 100px;
+}
+
+#search-container input {
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(23, 29, 4, 0.768),
+      rgba(231, 224, 90, 0.622));
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+input[type="radio"]:checked {
+  background: linear-gradient(rgba(219, 220, 215, 0.768),
+      rgba(90, 231, 151, 0.622));
+  border: 3px solid rgb(66, 73, 6);
+}
+
+input[type='range'] {
+  appearance: none;
+  width: 50%;
+  height: 2px;
+  background-color: rgb(66, 76, 4);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(rgba(23, 29, 4, 0.768), rgba(231, 224, 90, 0.622));
+}
+
+.filterBTN,
+.btnSearch {
+  background: linear-gradient(rgba(23, 29, 4, 0.768), rgba(231, 224, 90, 0.622));
+  width: 10%;
+  height: 30px;
+  color: white;
+}
+
+.filterBTN:hover {
+  background-color: rgba(194, 237, 67, 0.619);
+  box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.858);
+}
+
+
+#product-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 
+#product-container  */
+.product {
+  width: 30%;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-size: cover;
+  text-align: center;
+}
+
+.productImg {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coursesimg>.product {
+  width: 60%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*Language*/
+.Language,
+.courses {
+  width: 80%;
+  font-size: 32px;
+  margin: auto;
+}
+
+.btncall {
+  margin-bottom: 300px;
+  border-radius: 8px;
+  border: 1px solid rgb(112, 112, 6);
+  background: linear-gradient(rgba(23, 29, 4, 0.768), rgba(231, 224, 90, 0.622));
+  width: 30%;
+  height: 50px;
+  color: white;
+  margin-left: 40px;
+  border-radius: 30px;
+}
+
+#btnTest {
+  margin-bottom: 50%;
+  background: linear-gradient(rgba(23, 29, 4, 0.768), rgba(231, 224, 90, 0.622));
+  width: 40%;
+  height: 50px;
+  color: white;
+  margin: 100px 40px;
+  border-radius: 30px;
+}
+
+/*test*/
+#Tests {
+  width: 100%;
+  height: 550px;
+  padding-top: 0px;
+  margin-left: 20px;
+}
+
+#Tests h1 {
+  text-align: center;
+}
+
+.containerTest {
+  width: 100%;
+  height: 80px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.test {
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.progressContainer {
+  margin-top: 20px;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(5, 34, 25);
+}
+
+.LanguageTest {
+  width: 20%;
+}
+
+.quizLanguages {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+}
+
+/*contact*/
+#contact {
+  margin-top: 150px;
+  background-color: rgba(209, 203, 203, 0.868);
+}
+
+.contactContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(209, 203, 203, 0.868);
+}
+
+.text-Contakt {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.ficon {
+  margin: 100px 150px;
+}
+
+.icon {
+  padding-right: 30px;
+}
+
+.contactPhone {
+  width: 45%;
+}
+
+.contact-form {
+  width: 45%;
+}
+
+.form-control {
+  width: 45%;
+  border: 2px solid rgb(12, 11, 11);
+  border-radius: 8px;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.message {
+  width: 45%;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+
+.submit {
+  width: 45%;
+  height: 50px;
+  background: linear-gradient(rgba(23, 29, 4, 0.768), rgba(231, 224, 90, 0.622));
+  border-radius: 30px;
+  border: none;
+  color: white;
+  margin-right: 100px;
+}
+
+.email-phone {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-phone h3 {
+  font-size: 16px;
+}
+
+.col-emaile {
+  width: 45%;
+}
+
+.col-phone {
+  width: 45%;
+}
+
+footer h3 {
+  padding: 40px 0px;
+  font-style: oblique;
+  font-family: "SnellBT-Regular";
+  font-size: 20px;
+  text-align: center;
+}
+
+/*   ********************************760media*************@media only screen and (max-width: 760px)*/
+@media only screen and (max-width: 760px) {
+  .bar {
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+
+
+  .bar {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(11.5px);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11.5px);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: rgb(218, 215, 215);
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    padding: 1.5rem 0;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .filterBTN,
+  .btnSearch {
+    width: 50%;
+  }
+
+  .programcourses {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .courseslanguages {
+    width: 100%;
+  }
+
+  .coursesimg {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(236 235 183);
+  }
+
+  .small {
+    width: 3px;
+    height: 2px;
+    background-color: brown;
+    margin: 20px;
+  }
+
+  .product {
+    width: 100%;
+    height: 400px;
+  }
+
+  #btnCalc {
+    border-radius: 30px;
+    border: 1px solid rgb(112, 112, 6);
+    background: linear-gradient(rgba(23, 29, 4, 0.768), rgba(231, 224, 90, 0.622));
+    width: 30%;
+    height: 100px;
+    color: white;
+  }
+
+  .contactContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(209, 203, 203, 0.868);
+    flex-wrap: wrap;
+  }
+
+  .text-Contakt {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .contactPhone {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .form-control {
+    width: 80%;
+  }
+
+  .message {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .test {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .LanguageTest {
+    width: 80%;
+  }
+
+  .quizLanguages {
+    width: 100%;
+  }
+
+  #btnTest {
+    margin: 10px;
+  }
+
+  .answors {
+    height: auto;
+  }
+
+  .submit {
+    margin-bottom: 20px;
+  }
+
+  .containerTest {
+    flex-wrap: wrap;
+  }
+
+  #contact {
+    width: 100%;
+    margin-top: 500px;
+  }
+}
+
+/*   ********************************760media*************@media only screen and (max-width: 760px)*/
+@media only screen and (max-width: 460px) {
+
+  .filterBTN {
+    margin-left: 40px;
+  }
+
+  .product {
+    width: 100%;
+    height: 400px;
+  }
+
+  #contact {
+    width: 100%;
+    margin-top: 500px;
+  }
+
+  .contactContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(209, 203, 203, 0.868);
+    flex-wrap: wrap;
+  }
+
+  .text-Contakt {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .ficon {
+    margin: auto 50px;
+  }
+
+  #contact {
+    width: 100%;
+    margin-top: 500px;
+  }
+
+  .contact-form {
+    margin-left: 50px;
+  }
+
+  .email-phone {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-phone {
+    width: 70%;
+  }
+
+  .col-email {
+    width: 70%;
+  }
+
+  .message {
+    margin-bottom: 20px;
+  }
+
+  .submit {
+    margin-bottom: 20px;
+  }
+
+  #product-container {
+    padding: 20px;
+  }
+
+  #search-container h1 {
+    font-size: 28px;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .test {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .LanguageTest {
+    width: 80%;
+  }
+
+  .quizLanguages {
+    width: 100%;
+  }
+
+  .btnTest {
+    margin: 10px;
+  }
+}
